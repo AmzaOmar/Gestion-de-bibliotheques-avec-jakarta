@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Définir la page d'accueil -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>AbonneServlet</servlet-name>
+        <servlet-class>com.example.campuslibrary.controler.AbonneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AbonneServlet</servlet-name>
+        <url-pattern>/abonne</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

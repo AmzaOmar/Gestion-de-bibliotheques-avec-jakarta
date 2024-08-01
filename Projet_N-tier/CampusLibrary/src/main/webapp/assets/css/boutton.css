@@ -1,0 +1,49 @@
+
+.button-container{
+    float: right;
+    margin-left: auto;
+    margin-right: 30px;
+    text-align: right;
+}
+
+
+.cypher-btn-1 {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5em 0.5em;
+    background-color: #2874a6;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    display: inline-block; /* Assurez-vous que le bouton est inline-block */
+}
+
+.cypher-btn-1::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #2e86c1;
+    border-left: 5px solid #2e86c1;
+    transition: all 0.4s;
+}
+
+.cypher-btn-1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid #2e86c1;
+    border-right: 5px solid #2e86c1;
+    transition: all 0.4s;
+}
+
+.cypher-btn-1:hover:before,
+.cypher-btn-1:hover:after {
+    width: 100%;
+    height: 100%;
+}
